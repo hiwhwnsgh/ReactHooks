@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
 
-const useTitle = (initalTitle) => {
+export const useTitle = (initalTitle) => {
   const [title, setTitle] = useState(initalTitle);
   const updateTitle = () => {
     const htmlTitle = document.querySelector("title");
